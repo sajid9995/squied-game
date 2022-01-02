@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squid Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <div class="toggle"></div>
+            <a href="#" class="logo"><img src="logo.png"></a>
+        </header>
+
+        <div class="content">
+            <img src="text.png" class="content">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea saepe corrupti, sunt qui unde nemo ipsum voluptate eum!
+            </p>
+            <a href="#" class="btn"><ion-icon name="play-circle-outline"></ion-icon> Watch Trailer</a>
+        </div>       
+        
+        <div class="clip">
+            <div class="clipBox">
+                    <img src="img1.jpg">
+                <div class="play-btn">
+                    <img src="play.png">
+                </div>
+            </div>            
+            <div class="clipBox">
+                <img src="img2.jpg">
+                <div class="play-btn">
+                    <img src="play.png">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Cast</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    
+    
+    
+    <script src="fontawesome-free-5.15.4-web/js/fontawesome.min.js"></script>
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }        
+    </script>
+</body>
+</html>            
